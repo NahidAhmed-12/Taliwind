@@ -20,19 +20,41 @@
                   .responsive-image {
                     height: 90px;
                     width: 200px;
-                  }
+                   }
                  }
-                 }
+              }
     
                  .check-icon {
                   font-size: 1.6rem; 
                                    }
-         </style>
+
+
+                 @media (max-width: 640px) {
+                  #darkModeToggle {
+                    position: absolute;
+                                   }
+                                }
+
+
+
+
+                 .check-icon {
+                  font-size: 1.6rem; 
+                   }
+    
+    
+               body.dark{
+               background-color: #121212;
+               color: white;
+              }
+
+               body.dark #meddil{
+               background-color: #121212;
+               color: white;
+               }
+     </style>
         </head>
-   
         <body class="bg-white text-gray-800">
-
-
 
             <!-- THIS IS HEADER SECTION -->
             <header class="bg-white shadow-md">
@@ -53,9 +75,10 @@
                     
                     <!-- Button and icon for large screens -->
                     <div class="hidden md:flex items-center space-x-4">
-                        <button class="bg-red-500 text-white px-4 py-2 rounded">Register Interest</button>
-                        <i class="fas fa-moon text-gray-600"></i>
+                       <a href="#"> <button class="bg-red-500 text-white px-4 py-2 rounded">Register Interest</button></a>
+                        
                     </div>
+                    <i class="fas fa-moon text-gray-600 block mt-4 sm:mt-0" id="darkModeToggle"></i>
                 </div>
             </header>
         
@@ -100,7 +123,7 @@
                             </div>
                         </div>
                         <div class="mt-6 flex flex-col md:flex-row space-y-4 md:space-y-0 md:space-x-4">
-                            <button class="bg-red-500 text-white px-6 py-2 rounded">Sign up</button>
+                            <a href="#"><button class="bg-red-500 text-white px-6 py-2 rounded">Sign up</button></a>
                             <button class="bg-white text-gray-800 border border-gray-300 px-6 py-2 rounded">Learn more</button>
                         </div>
                     </div>
@@ -140,7 +163,7 @@
 
   <div class="flex flex-wrap justify-center gap-8">
  
-    <div class="bg-white p-6 rounded-lg shadow-md w-full sm:w-96 md:w-96">
+    <div class="bg-white p-6 rounded-lg shadow-md w-full sm:w-96 md:w-96" id="meddil">
      <h2 class="text-xl font-semibold mb-4">
       What you will learn <hr class="mt-4 border-rose-500">
      </h2> 
@@ -176,7 +199,7 @@
      </ul>
     </div>
     <!-- Skills you will gain section -->
-    <div class="bg-white p-6 rounded-lg shadow-md w-full sm:w-96 md:w-96">
+    <div class="bg-white p-6 rounded-lg shadow-md w-full sm:w-96 md:w-96" id="meddil">
      <div class=" p-4 mb-4">
       <img alt="Illustration of various IT concepts and tools" class="w-full" style="height: 120px;" src="image/IT_social 1.png" width="300"/>
      </div>
@@ -184,40 +207,40 @@
       Skills you will gain
      </h2>
      <div class="flex flex-wrap gap-2">
-      <span class="bg-white border  border-rose-400  rounded-full px-3 py-1 text-sm">
+      <span id="meddil" class="bg-white border  border-rose-400  rounded-full px-3 py-1 text-sm">
        Debugging
       </span>
-      <span class="bg-white border border-rose-400  rounded-full px-3 py-1 text-sm">
+      <span id="meddil" class="bg-white border border-rose-400  rounded-full px-3 py-1 text-sm">
        Customer Service
       </span>
-      <span class="bg-white border border-rose-500  rounded-full px-3 py-1 text-sm">
+      <span id="meddil" class="bg-white border border-rose-500  rounded-full px-3 py-1 text-sm">
        Customer Support
       </span>
-      <span class="bg-white border border-rose-500  rounded-full px-3 py-1 text-sm">
+      <span id="meddil" class="bg-white border border-rose-500  rounded-full px-3 py-1 text-sm">
        Domain Name Systems
       </span>
-      <span class="bg-white border border-rose-500  rounded-full px-3 py-1 text-sm">
+      <span id="meddil" class="bg-white border border-rose-500  rounded-full px-3 py-1 text-sm">
        Network Model
       </span>
-      <span class="bg-white border border-rose-500 rounded-full px-3 py-1 text-sm">
+      <span id="meddil" class="bg-white border border-rose-500 rounded-full px-3 py-1 text-sm">
        Linux
       </span>
-           <span class="bg-white border border-rose-500  rounded-full px-3 py-1 text-sm">
+           <span id="meddil" class="bg-white border border-rose-500  rounded-full px-3 py-1 text-sm">
         Binance
       </span>
-           <span class="bg-white border border-rose-500  rounded-full px-3 py-1 text-sm">
+           <span id="meddil" class="bg-white border border-rose-500  rounded-full px-3 py-1 text-sm">
         proxy
       </span>
-      <span class="bg-white border border-rose-500  rounded-full px-3 py-1 text-sm">
+      <span id="meddil" class="bg-white border border-rose-500  rounded-full px-3 py-1 text-sm">
        Encryption Algorithms and Techniques
       </span>
-      <span class="bg-white border border-rose-500  rounded-full px-3 py-1 text-sm">
+      <span id="meddil" class="bg-white border border-rose-500  rounded-full px-3 py-1 text-sm">
        Ipv4
       </span>
-      <span class="bg-white border border-rose-500  rounded-full px-3 py-1 text-sm">
+      <span id="meddil" class="bg-white border border-rose-500  rounded-full px-3 py-1 text-sm">
        Binary Code
       </span>
-           <span class="bg-white border border-rose-500  rounded-full px-3 py-1 text-sm">
+           <span id="meddil" class="bg-white border border-rose-500  rounded-full px-3 py-1 text-sm">
         Hamster
       </span>
      </div>
@@ -227,9 +250,9 @@
 
     <!-- This is middle two section  -->
 
-    <div class="flex flex-col md:flex-row space-x-0 md:space-x-8 justify-center shadow-lg p-7">
+    <div class="flex flex-col md:flex-row space-x-0 md:space-x-8 justify-center shadow-lg p-7" >
       <!-- Left Card -->
-      <div class="bg-white rounded-lg shadow-lg p-8 mb-4 md:mb-0">
+      <div class="bg-white rounded-lg shadow-lg p-8 mb-4 md:mb-0" id="meddil">
         <h2 class="text-xl font-semibold mb-4">Jobs Associated with Certificate</h2>
         <hr class="border-t-2 border-red-200 mb-4" />
         <div class="grid grid-cols-2 gap-4">
@@ -283,7 +306,7 @@
 
 <div class=" flex justify-center items-center ">
   <img  style="width: 1000px; height: 200px;" class="justify-center pointer-events-none hidden sm:block" src="image/test.png" alt="">
-  </div>
+  </div> <br><br> <br>
   
 <div class=" flex justify-center items-center">
 <img class="pointer-events-none" src="image/Group 238901.png" alt="">
@@ -345,7 +368,7 @@
        </div>
       </div>
       
-      <footer class="bg-white py-12">
+      <footer class="bg-white py-12" id="meddil">
        <div class="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 ">
            <div class="flex flex-wrap justify-between">
 
@@ -409,13 +432,25 @@
         </div>
     </div>
 </footer>
-<div class="bg-gray-200 py-4">
+<div class="bg-gray-200 py-4" id="meddil">
     <p class="text-center text-gray-600">
         Copyright © 2022 Creatives For You LTD
     </p>
 </div>
-        </body>
-       </html>
+
+
+<script>
+  function toggleClass(className) {
+
+    document.body.classList.toggle(className);
+  }
+
+  document.getElementById("darkModeToggle").addEventListener("click", function() {
+    toggleClass("dark"); 
+  });
+</script>
+</body>
+</html>
        
 
 
